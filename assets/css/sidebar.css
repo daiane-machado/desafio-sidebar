@@ -1,0 +1,148 @@
+:root {
+  --body-bg-color: #dce4e3;
+  --green: #18c29c;
+  --light-green: #8ed7c6;
+	--light-grey: #dce4e3;
+  --text-color: #084236;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+  background-color: var(--green);
+  left: 0;
+  height: 100vh;
+  padding: 1rem 0.875rem 1rem 0.875rem;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  width: 15.62rem;
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-left: 0.75rem;
+  width: 100%;
+}
+
+.sidebar__btn {
+  background-image: url("../img/menu.svg");
+  background-color: var(--green);
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.sidebar__search {
+  align-items: center;
+  background-color: var(--light-green);
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: 0.75rem 0.75rem;
+  border-radius: 0.75rem;
+  height: 3.1rem;
+  padding-left: 3rem;
+  width: 100%;
+}
+
+.sidebar__search::placeholder {
+color: var(--text-color);
+margin-right: 1rem;
+}
+
+.sidebar__list {
+  list-style: none;
+}
+
+li {
+  padding: 1rem 0.5rem 1rem 4rem;
+  background-repeat: no-repeat;
+  background-position: 0.75rem 0.95rem;
+}
+
+
+li:nth-child(1) {
+  background-image: url("../img/grid.svg");
+}
+
+li:nth-child(2) {
+  background-image: url("../img/pet.svg");
+}
+li:nth-child(3) {
+  background-image: url("../img/user.svg");
+}
+
+li:nth-child(4) {
+  background-image: url("../img/vet.svg");
+}
+
+li:nth-child(4) {
+  background-image: url("../img/settings.svg");
+}
+
+.sidebar__footer {
+  background-color: var(--light-green);
+  bottom: 0;
+  display: flex;
+  left: 0;
+  height: 3.75rem;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+  position: fixed;
+  width: 15.62rem;
+  transition: 0.5s;
+}
+
+.user__avatar {
+  width: 2.81rem;
+  height: auto;
+  object-fit: cover;
+  margin-right: 0.5rem;
+  border-radius: 0.75rem;
+}
+
+.user__info {
+  color: var(--text-color);
+  object-fit: cover;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.user__info span:first-child {
+  font-size: 0.95rem;
+  line-height: 22px;
+}
+
+.user__info span:last-child {
+  font-size: 0.75rem;
+  line-height: 18px;
+}
+
+.sidebar__btn-logout {
+  background-image: url("../img/log-out.svg");
+  height: 1.5rem;
+  width: 1.5rem;
+  object-fit:cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  align-self: center;
+  margin-left: 2.93rem;
+}
+
+
+
+
+
+

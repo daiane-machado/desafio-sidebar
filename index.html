@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/sidebar.css"/>
+  <link rel="stylesheet" href="./assets/css/reset.css"/>
+  <title>Desafio Siderbar</title>
+</head>
+<body>
+  <section class="sidebar" id="sidebar">
+    <div class="sidebar__header">
+      <img id="logotipo" src="./assets/img/logo.svg" alt="" class="sidebar__logo">
+      <button id="sidebar-btn" class="sidebar__btn"></button>
+    </div>
+    
+    <div class="sidebar__fieldSearch">
+      <label for="search"></label>
+      <input id="search" type="text" class="sidebar__search" placeholder="Buscar">
+    </div>
+    
+    <ul class="sidebar__list">
+      <li class="sidebar__itens-list">Dashboard</li>
+      <li class="sidebar__itens-list">Pets</li>
+      <li class="sidebar__itens-list">Clientes</li>
+      <li class="sidebar__itens-list">Vets</li>
+      <li class="sidebar__itens-list"></li>
+    </ul>
+
+    <div id="sidebar-footer" class="sidebar__footer">
+      <img id="user-avatar" src="./assets/img/photo.jpg" alt="mulher asiática" class="user__avatar">
+      <div id="user-info" class="user__info">
+        <span>Eleanor Pena</span>
+        <span>Veterinária</span>
+      </div>
+      <button id="btn-logout" class="sidebar__btn-logout"></button>
+    </div>
+
+  </section>
+  <script src="./assets/script/opencloseNav.js"></script>
+</body>
+</html>
