@@ -5,6 +5,7 @@ const sidebarFooter= document.getElementById("sidebar-footer");
 const userAvatar = document.getElementById("user-avatar");
 const userDatas = document.getElementById("user-info");
 const btnLogout = document.getElementById("btn-logout");
+const main = document.getElementById("main");
 
 
 btnSidebar.onclick = function () {
@@ -15,6 +16,7 @@ btnSidebar.onclick = function () {
     userAvatar.style.display = "none";
     userDatas.style.display ="none";
     btnLogout.style.margin = "auto";
+    main.style.marginLeft = "4.875rem"
     
   }else{
     sidebar.style.width = "15.62rem";
@@ -23,5 +25,6 @@ btnSidebar.onclick = function () {
     userAvatar.style.display = "block";
     userDatas.style.display ="flex";
     btnLogout.style.marginLeft = "2.93rem";
+    main.style.marginLeft = "15.62rem"
   }
 }
